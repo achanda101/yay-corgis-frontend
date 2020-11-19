@@ -41,10 +41,21 @@
 </style>
 
 <h1>Storing User-generated Content in Sanity.io ... can you believe?</h1>
-
-<div class="wrapper">
-  {# <h2 contenteditable="contenteditable" spellcheck="false">boop.</h2> #}
-  {% for corgi in corgis %}
+{# <div class="wrapper"> #}
+{# <h2 contenteditable="contenteditable" spellcheck="false">boop.</h2> #}
+{% for corgi in corgis %}
+  <div class="corgi">
     <img src="{{ corgi.corgiImage.asset.url | url }}" alt="{{ corgi.corgiImage.asset.creditLine }}"/>
-  {% endfor %}
-</div>
+    <h3>Suggested Names</h3>
+    <ul>
+      {% for name in corgi.suggestedNames %}
+        <li>{{ name.name }}
+          :: Votes
+          {{ name.votes }}
+          <button data-id="{{ corgi._id }} " data-key="{{ name._key }}">Vote for this name</button>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+{# </div> #}

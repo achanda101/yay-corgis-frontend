@@ -1,4 +1,4 @@
-*[_type=="corgi"]{ _id, suggestedNames[]{name, votes}, corgiImage{asset->{creditLine, url} }}
+*[_type=="corgi"]{ _id, suggestedNames[]{_key, name, votes}, corgiImage{asset->{creditLine, url} }}
 
 RESULT
 
@@ -13,17 +13,22 @@ RESULT
     },
     "suggestedNames": [
       {
+        "_key": "ae4e5697d772",
         "name": "Custard",
         "votes": 3
       },
       {
+        "_key": "fd4c17e60f4a",
         "name": "Porkie Pie",
         "votes": 0
       },
       {
+        "_key": "51d44326df45",
         "name": "Toffee",
         "votes": 0
       }
     ]
   }
 ]
+
+skuh8CbJ8Yx1s7h0jxYiHBNm1rrqh0oAEPBa9ftApVkfp6rt5OChqUnFsvJPzA2Ita2rZ8uZkULqz0JUT6is52KR2qVpXHMlyIzqV66CBUtfxWpeVxMqlbdQdcy87Zg6pHm6nDJ9TBz8aZirWAt0yAZjORjDISlkZfOL3mnCsdXR6C1LdGyu
