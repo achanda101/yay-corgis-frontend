@@ -1,10 +1,7 @@
 module.exports = {
   // keep it short! shown in the header
-  title: 'Demo of the Demo',
+  title: "YAY Corgis 11ty Frontend",
 
   // these are all optional and add links to the footer
-  repo: 'learnwithjason/demo-base',
-  episode:
-    'https://www.learnwithjason.dev/creating-css-variable-font-text-effects',
-  tutorial: 'https://codepen.io/jlengstorf/pen/QWbdLjb',
+  repo: "achanda101/yay-corgis-frontend",
 };

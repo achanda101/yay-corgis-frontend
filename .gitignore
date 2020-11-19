@@ -3,3 +3,6 @@ _site
 
 # Local Netlify folder
 .netlify
+
+# ignore history
+.history

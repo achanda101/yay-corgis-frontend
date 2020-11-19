@@ -1,0 +1,29 @@
+*[_type=="corgi"]{ _id, suggestedNames[]{name, votes}, corgiImage{asset->{creditLine, url} }}
+
+RESULT
+
+[
+  {
+    "_id": "3c5bed5e-e817-40df-9de1-2da114429210",
+    "corgiImage": {
+      "asset": {
+        "creditLine": "Florencia Potter by Unsplash",
+        "url": "https://cdn.sanity.io/images/0gwcf50j/production/52fc8be2e0e70d29fcb0d8de168917acbea083a8-4000x3000.jpg"
+      }
+    },
+    "suggestedNames": [
+      {
+        "name": "Custard",
+        "votes": 3
+      },
+      {
+        "name": "Porkie Pie",
+        "votes": 0
+      },
+      {
+        "name": "Toffee",
+        "votes": 0
+      }
+    ]
+  }
+]
