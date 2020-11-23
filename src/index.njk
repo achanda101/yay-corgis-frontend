@@ -45,7 +45,7 @@
 {# <h2 contenteditable="contenteditable" spellcheck="false">boop.</h2> #}
 {% for corgi in corgis %}
   <div class="corgi">
-    <img src="{{ corgi.corgiImage.asset.url | url }}" alt="{{ corgi.corgiImage.asset.creditLine }}"/>
+    <img src="{{ helpers.urlFor(corgi.corgiImage).url() }}" alt="{{ corgi.corgiImage.asset.creditLine }}"/>
     <h3>Suggested Names</h3>
     <ul>
       {% for name in corgi.suggestedNames %}

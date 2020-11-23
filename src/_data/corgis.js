@@ -9,7 +9,7 @@ const client = sanityClient({
 async function loadCorgis() {
   const corgis = await client
     .fetch(
-      '*[_type=="corgi"]{ _id, suggestedNames[]{_key, name, votes}, corgiImage{asset->{creditLine, url} }}'
+      '*[_type=="corgi"]{ _id, suggestedNames[]{_key, name, votes}, corgiImage{asset->{creditLine, url}, ... }}'
     )
     .catch((err) => console.error(err));
 
