@@ -49,13 +49,28 @@
     <h3>Suggested Names</h3>
     <ul>
       {% for name in corgi.suggestedNames %}
-        <li>{{ name.name }}
-          :: Votes
-          {{ name.votes }}
-          <button data-id="{{ corgi._id }} " data-key="{{ name._key }}">Vote for this name</button>
+        <li>
+          <form>
+            {{ name.name }}
+            -
+            {{ name.votes }}
+            Votes
+            <input type="hidden" name="corgiId" value="{{ corgi._id }}"/>
+            <input type="hidden" name="nameKey" value="{{ name._key }}"/>
+            <button>Vote for this name</button>
+          </form>
         </li>
       {% endfor %}
     </ul>
   </div>
 {% endfor %}
 {# </div> #}
+
+<script>
+  async function sendVote(event) {
+    event.preventDefault();
+    const data = new FormData(event.target);
+    const corgiId = data.get('corgiId');
+    const nameKey = data.get('nameKey');
+  }
+</script>
